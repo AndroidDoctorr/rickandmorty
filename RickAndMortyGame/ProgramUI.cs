@@ -10,10 +10,8 @@ namespace RickAndMortyGame
 {
     public class ProgramUI
     {
-        // This can be a class later JERRY IS DAD BETH IS MOM AND SUMMER IS SISTER MR POOPY BUTT
         public enum Item { plumbus, meeseeks, portalgun, beer, tinyRick, blimBlam };
         public List<Item> inventory = new List<Item>();
-
 
         public static Room garage = new Room(
             Texts.Splashes["garage"],
@@ -23,7 +21,7 @@ namespace RickAndMortyGame
                 new Event(
                     EventType.newExit,
                     "secret scanner",
-                    new Result("laboratory", Texts.EventMessages["openLab"] )
+                    new Result("laboratory", Texts.EventMessages["openLab"])
                 )
             }
         );
@@ -203,7 +201,5 @@ namespace RickAndMortyGame
                 }
             }
         }
-
-
     }
 }

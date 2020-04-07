@@ -9,17 +9,10 @@ namespace RickAndMortyGame
 {
     public class Room
     {
-        public string Splash { get; }//AT THIS POINT, I DON'T KNOW HOW THE HELL I'D KNOW TO PUT THIS HERE 25MARCH
-        public List<string> Exits { get; }//I DO THINK I UNDERSTAND WHY THIS WOULD BE HERE AS A GETTER AS ROOM COULD HAVE MULITPLE EXITS
-        public List<Item> Items { get; }//SAME IN UNDERSTANDING AS MULTIPLE ITEMS LIKE WEAPON I GUESS COULD BE USED FROM HERE. BUT WHAT IS ITEM VS STRING?
+        public string Splash { get; }
+        public List<string> Exits { get; }
+        public List<Item> Items { get; }
         public List<Event> Events { get; }
-
-        // I planned to add an Events list, that contains Event class objects
-        // An Event can have items or actions that it depends on, possibly
-        // Other Events. Events can also make new Exits or Items available.
-
-        // TODO:
-        // public List<Event> Events { get; }
 
         public Room(string splash, List<string> exits, List<Item> items, List<Event> events)
         {
